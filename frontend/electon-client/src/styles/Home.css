@@ -1,0 +1,11 @@
+.hero {
+  background-color: #003585;
+}
+
+.heroInner {
+  gap: 50px;
+}
+
+.heroLeft button {
+  border-radius: 50px;
+}
