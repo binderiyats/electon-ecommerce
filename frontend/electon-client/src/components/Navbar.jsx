@@ -22,10 +22,12 @@ export const Navbar = () => {
       }}
     >
       <div className="container navbar d-flex" id="navbar">
-        <img
-          src={isHome ? `./images/svg/E-logo.svg` : `./images/png/logo.png`}
-          alt=""
-        />
+        <Link to="/">
+          <img
+            src={isHome ? `./images/svg/E-logo.svg` : `./images/png/logo.png`}
+            alt=""
+          />
+        </Link>
 
         <NavbarSearch />
 

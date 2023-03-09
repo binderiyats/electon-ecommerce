@@ -1,0 +1,27 @@
+# CATEGORY_TABLE
+GET http://localhost:8000/category
+
+###
+GET http://localhost:8000/category/KJLR_PRcMyTfp2K_E5uH4
+
+###
+POST http://localhost:8000/category
+Content-Type:application/json
+
+{
+    "name": "Dell",
+    "slug": "dell",
+    "parent_id": "1DafpociCnBcO-87bIQwE"
+}
+###
+PATCH http://localhost:8000/category/KJLR_PRcMyTfp2K_E5uH4
+Content-Type: application/json
+
+{
+    "name": "MacBook",
+    "slug": "macbook",
+    "parent_id": "1DafpociCnBcO-87bIQwE"
+}
+
+###
+DELETE http://localhost:8000/category/BzVIde0wTJ7J3JMpSxUNc
