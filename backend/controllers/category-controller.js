@@ -41,19 +41,6 @@ export const createCategory = async (category) => {
   }
 };
 
-//DELETE
-
-export const deleteCategory = async (id) => {
-  try {
-    const result = await pool.query(`DELETE FROM category WHERE categoryId=?`, [
-      id,
-    ]);
-    return result;
-  } catch (error) {
-    console.log(error);
-  }
-};
-
 // UPDATE | PATCH
 
 export const updateCategory = async (category) => {
@@ -71,6 +58,19 @@ export const updateCategory = async (category) => {
       ]
     );
     const result = await getOneCategory(category.id);
+    return result;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+//DELETE
+
+export const deleteCategory = async (id) => {
+  try {
+    const result = await pool.query(`DELETE FROM category WHERE categoryId=?`, [
+      id,
+    ]);
     return result;
   } catch (error) {
     console.log(error);
