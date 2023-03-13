@@ -3,7 +3,7 @@ import {
   getAllProducts,
   getOneProduct,
   createProduct,
-  updateProduct
+  updateProduct,
 } from "../controllers/product-controller.js";
 const router = express.Router();
 
@@ -32,7 +32,6 @@ router.get("/", async (req, res) => {
     reviewRating,
     readCount,
     created,
-    createedAt
   } = req.body;
   const product = await createProduct({
     categoryId,
@@ -46,8 +45,43 @@ router.get("/", async (req, res) => {
     reviewRating,
     readCount,
     created,
-    new Date();
   });
   res.json(product);
 });
+
+//PATCH | UPDATE
+
+router.patch("/:id", async (req, res) => {
+  const { id } = req.params;
+  const {
+    categoryId,
+    name,
+    description,
+    immageUrl,
+    text,
+    price,
+    discountPrice,
+    remaining,
+    reviewRating,
+    readCount,
+    updated,
+  } = req.body;
+
+  const result = await updateProduct({
+    categoryId,
+    name,
+    description,
+    immageUrl,
+    text,
+    price,
+    discountPrice,
+    remaining,
+    reviewRating,
+    readCount,
+    updated,
+  });
+  res.json(product);
+  return result;
+});
+
 export default router;
