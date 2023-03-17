@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Navbar.css";
 import { Link } from "react-router-dom";
-import { ShoppingCart, SignIn } from "phosphor-react";
+import { BiUser } from "react-icons/bi";
+import { RiShoppingCart2Line } from "react-icons/ri";
 import { NavbarSearch } from "./Navbar/NavbarSearch";
 import { useLocation } from "react-router-dom";
 
@@ -34,10 +35,10 @@ export const Navbar = () => {
         <div className="links">
           {/* <Link to="/"></Link> */}
           <Link to="/signin">
-            <SignIn size={32} />
+            <BiUser size={32} />
           </Link>
           <Link to="/cart">
-            <ShoppingCart size={32} />
+            <RiShoppingCart2Line size={32} />
             <span>0</span>
           </Link>
         </div>
