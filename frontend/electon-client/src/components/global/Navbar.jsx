@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import "../styles/Navbar.css";
+import "../../styles/components/Navbar.css";
 import { Link } from "react-router-dom";
 import { BiUser } from "react-icons/bi";
 import { RiShoppingCart2Line } from "react-icons/ri";
-import { NavbarSearch } from "./Navbar/NavbarSearch";
 import { useLocation } from "react-router-dom";
+import { Form, InputGroup, Button } from "react-bootstrap";
 
 export const Navbar = () => {
   const location = useLocation();
@@ -30,7 +30,10 @@ export const Navbar = () => {
           />
         </Link>
 
-        <NavbarSearch />
+        <InputGroup className="searchInput mx-auto ">
+          <Form.Control placeholder="Search any things" />
+          <Button variant="outline-light">Search</Button>
+        </InputGroup>
 
         <div className="links">
           {/* <Link to="/"></Link> */}

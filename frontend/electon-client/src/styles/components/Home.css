@@ -1,0 +1,25 @@
+.hero {
+  padding-top: 30px;
+  margin-bottom: 123px;
+}
+
+.heroInner {
+  gap: 50px;
+}
+
+.content h1 {
+  font-size: 50px;
+  margin-bottom: 66px;
+  width: 50%;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.content h1 span {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.content .buttons {
+  border-radius: 50px;
+}

@@ -1,4 +1,4 @@
-import "../styles/Footer.css";
+import "../../styles/components/Footer.css";
 import { FaWhatsapp, FaFacebook, FaGoogle } from "react-icons/fa";
 
 export const Footer = () => {

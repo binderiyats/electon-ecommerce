@@ -1,10 +1,10 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Navbar } from "./components/Navbar";
+import { Navbar } from "./components/global/Navbar";
 import { Home } from "./pages/Home";
 import { Cart } from "./pages/Cart";
-import { Footer } from "./components/Footer";
+import { Footer } from "./components/global/Footer";
 function App() {
   return (
     <div className="App">
