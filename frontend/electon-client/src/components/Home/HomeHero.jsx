@@ -1,5 +1,3 @@
-import { Button } from "react-bootstrap";
-
 export const HomeHero = () => {
   return (
     <div className="hero primary-bg">

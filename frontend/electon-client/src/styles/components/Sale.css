@@ -1,0 +1,42 @@
+.saleProduct {
+  margin-bottom: 80px;
+  border-radius: 20px;
+  padding: 91px 149px 63px 797px;
+}
+
+.saleProduct .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.saleProduct .content .white-btn {
+  padding: 12px 26px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 36px;
+}
+
+.saleProduct .content h2 {
+  font-size: 40px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin-bottom: 12px;
+}
+
+.saleProduct .content p {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 36px;
+}
+
+.saleProduct .content .outline-secondary-btn {
+  color: #ffffff;
+  padding: 12px 32px;
+  font-size: 15px;
+  border-radius: 20px;
+  font-weight: 500;
+}
